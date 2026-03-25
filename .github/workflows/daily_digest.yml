@@ -27,7 +27,7 @@ jobs:
       - name: Generate digest
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python src/main.py
+        run: python -m src.main
 
       - name: Commit and push digest
         run: |
